@@ -6,6 +6,7 @@
     --color--principal-100: #673de6;
     --color--principal-200: #2f1c6a;
     --color--principal-300: #1f1346;
+    --color--principal-900: #e2dbfc;
 }
 
 *{
@@ -13,4 +14,149 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.hero{
+    background-color: var(--color--principal-0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 650px;
+    width: 100vw;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 60px 0px 60px;
+    min-height: 100%;
+}
+
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: var(--color--principal-200);
+    width: 40%;
+    justify-content: flex-start;
+    min-height: 100%;
+}
+
+.hero-title h1{
+    font-size: 36px;
+    line-height: 40px;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+}
+
+.title-features{
+    font-size: 20px;
+    margin: 8px 0px 0px;
+    font-weight: 700;
+    line-height: 30px;
+    white-space: nowrap;
+}
+
+.offer{
+    color: var(--color--principal-100);
+}
+
+.hero-features{
+    font-size: 16px;
+    margin: 20px 0px 0px 0px;
+}
+
+.feature-list{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.list-check{
+    align-items: baseline;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+.down{
+    margin-bottom: 24px;
+}
+
+.bi-check-lg{
+    color: #03b191;
+    font-size: 23px;
+}
+
+.hero-price{
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.price-ar{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.price-total{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero-month{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.cta-button{
+    display: flex;
+    background-color: var(--color--principal-100);
+    border: 2px solid var(--color--principal-100);
+    color: var(--color--principal-0);
+    width: auto;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    justify-content: center;
+    padding: 12px 48px;
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+.timer{
+    display: flex;
+    background-color:var(--color--principal-900) ;
+    align-items: center;
+    color: var(--color--principal-300);
+    padding: 12px 20px;
+    border: 2px solid var(--color--principal-900);
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.hero-right img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;   
 }
