@@ -6,40 +6,32 @@
     <title>Hostinger Nav</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<script>
-  window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 0) {
-      navbar.classList.add('scroll');
-    } else {
-      navbar.classList.remove('scroll');
-    }
-  });
-</script>
 <body>
     <!-- HEADER -->
     <header class="main-header">
-    <nav class="navbar">
         <div class="nav-left">
-        <a href="#"><img src="imagenes/Hostinger_logo_black.svg" alt="Hostinger Logo" class="logo"></a>
-        </div>
-        <div class="nav-center">
-            <ul class="nav-menu">
-                <li><a href="#">Precios</a></li>
-                <li class="dropdown">Servicios<i class="bi bi-chevron-down"></i></li>
-                <li class="dropdown">Explorar<i class="bi bi-chevron-down"></i></li>
-                <li class="dropdown">Soporte<i class="bi bi-chevron-down"></i></i></li>
-                <li><a href="#">Horizons</a></li>
+          <nav class="navbar">
+            <a href="#"><img src="./imagenes/HostingerLogo.svg" alt="Hostinger Logo" class="logo-hostinger"></a>
+            <ul class="nav-menu"> 
+              <li href="#">Precios</li>
+              <li class="dropdown">Servicios<i class="bi bi-chevron-down"></i></li>
+              <li class="dropdown">Explorar<i class="bi bi-chevron-down"></i></li>
+              <li class="dropdown">Soporte<i class="bi bi-chevron-down"></i></i></li>
+              <li href="#">Horizons</li>
             </ul>
-        </div>
+          </nav>
+          </div>
+        
         <div class="nav-right">
-            <div class="languaje">
-                <img src="imagenes/descarga.png" alt="Argentina flag" class="flag">
-                <span>Español</span>
-            </div>
-            <button class="login-btn">Ingresar</button>
+          <div class="languaje">
+            <img src="./imagenes/descarga.png" alt="Argentina flag" class="flag">
+            <span>Español</span>
+          </div>
+          <button class="login-btn">Ingresar</button>
         </div>
-    </nav>
+        <button class="btn-menu" aria-label="Menú">
+            <i class="bi bi-list"></i>
+        </button>
     </header>
     <!-- HERO -->
     <section class="hero">
@@ -93,8 +85,7 @@
                 <span>Garantía de 30 días: probalo sin cargo</span>
             </div>
             </div>
-        
-        
+            
             <div class="hero-right">
             <img src="./imagenes/imagen-hero.avif" alt="Ejemplo de interfaz de hosting y creador web">
             </div>
@@ -142,5 +133,48 @@
             </div>
         </section>
     </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="box-top">
+                <div class="hostinger-logo">
+                    <a href="#"><img src="./imagenes/Logo Hostinger lila.png" alt="Hostinger" class="logo"></a>
+                </div>
+                <div class="redes">
+                    <a href="#"><i class="bi3 bi-linkedin"></i></a>
+                    <a href="#"><i class="bi3 bi-facebook"></i></a>
+                    <a href="#"><i class="bi3 bi-instagram"></i></a>
+                    <a href="#"><i class="bi3 bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi3 bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="box-center">
+                <div class="box-cards">
+                    <img src="./imagenes/visa.avif" alt="visa" class="cards-img">
+                    <img src="./imagenes/mastercard.avif" alt="mastercard" class="cards-img">
+                    <img src="./imagenes/amex.avif" alt="amex" class="cards-img">
+                    <img src="./imagenes/diners.avif" alt="diners" class="cards-img">
+                    <img src="./imagenes/naranja.avif" alt="naranja" class="cards-img">
+                    <img src="./imagenes/cordial.avif" alt="cordial" class="cards-img">
+                    <img src="./imagenes/cordobesa.avif" alt="cordobesa" class="cards-img">
+                    <a href="#">y más</a>
+                </div>
+                <div class="box-policies">
+                    <a href="#">Politica de privacidad</a>
+                    <a href="#">Politica de reembolso</a>
+                    <a href="#">Términos de servicio</a>
+                </div>
+            </div>
+            <div class="box-bottom">
+                <div>
+                    <p>© 2004-2025 Hostinger. Servicios de hosting web premium, cloud, VPS y registro de dominios.</p>
+                </div>
+                <div>
+                    <p>Los precios se muestran sin IVA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
